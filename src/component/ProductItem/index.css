@@ -1,0 +1,60 @@
+.product-item-list {
+  margin: 20px;
+  background-color: #141414;
+  position: relative;
+  display: inline-block;
+}
+
+.product-image {
+  width: 100%;
+  height: 373.26px;
+  gap: 0px;
+  border-radius: 6.59px 6.59px 0px 0px;
+}
+
+.save-img {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.item-about-card {
+  padding: 10px;
+}
+
+.item-name {
+  font-family: "Encode Sans";
+  font-size: 20.5px;
+  font-weight: 500;
+  line-height: 25.62px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  color: #e5dfd9;
+}
+
+.discount-price {
+  font-family: "Encode Sans";
+  font-size: 18.79px;
+  font-weight: 700;
+  line-height: 23.49px;
+  text-align: left;
+  color: #e5dfd9;
+}
+
+.original-price {
+  font-family: "Encode Sans";
+  font-size: 11.96px;
+  font-weight: 400;
+  line-height: 14.95px;
+  text-align: right;
+  text-decoration: line-through;
+}
+
+.percentage-off {
+  font-family: "Encode Sans";
+  font-size: 11.96px;
+  font-weight: 500;
+  line-height: 14.95px;
+  text-align: left;
+  color: #2fc14f;
+}

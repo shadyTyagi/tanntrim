@@ -1,0 +1,14 @@
+.tab-item-card {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.product-item-container {
+  margin-left: 30px;
+}
+
+.product-item-card {
+  display: flex;
+  flex-wrap: wrap;
+}
