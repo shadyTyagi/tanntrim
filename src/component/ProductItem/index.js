@@ -17,13 +17,17 @@ const ProductItem = (props) => {
       />
       <div className="item-about-card">
         <p className="item-name">{name}</p>
-        <div>
+        <div className="list-footer-card">
           <p className="discount-price">
             Rs {discount} <span className="original-price">{price}</span>
             <span className="percentage-off">
               ({`${discountPercentage} % OFF`})
             </span>
           </p>
+          <img
+            src="https://res.cloudinary.com/dzaz9bsnw/image/upload/v1713125373/Group_450_i17wbb.png"
+            alt="add to cart"
+          />
         </div>
       </div>
     </li>

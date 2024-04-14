@@ -1,4 +1,4 @@
-import React from "react";
+import { useState } from "react";
 import ProductItem from "../ProductItem";
 import TabItem from "../TabItem";
 import "./index.css";
@@ -125,19 +125,38 @@ const productData = [
 ];
 
 const Product = () => {
+  const [activeTabId, setActiveTabId] = useState(tabsList[0].tabId);
+
+  const filterProductBag = () => {
+    const filteredData = productData.filter(
+      (item) => item.type === activeTabId
+    );
+    return filteredData;
+  };
+  const updateActiveTabId = (tabId) => {
+    setActiveTabId(tabId);
+  };
+  const filterProduct = filterProductBag();
   return (
     <div>
       <ul className="tab-item-card">
         {tabsList.map((item) => (
-          <TabItem tabData={item} key={item.id} />
+          <TabItem tabData={item} key={item.id} onClick={updateActiveTabId} />
         ))}
       </ul>
       <div className="product-item-container">
-        <ul className="product-item-card">
-          {productData.map((item) => (
-            <ProductItem productData={item} key={item.id} />
-          ))}
-        </ul>
+        <p className="category">
+          Bags<span className="dot">.</span>Bagpacks
+        </p>
+        {filterProduct.length === 0 ? (
+          <p className="no-item">Sorry, no items found</p>
+        ) : (
+          <ul className="product-item-card">
+            {filterProduct.map((item) => (
+              <ProductItem productData={item} key={item.id} />
+            ))}
+          </ul>
+        )}
       </div>
     </div>
   );

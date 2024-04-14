@@ -1,0 +1,15 @@
+.display-text {
+  font-family: "Encode Sans";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16.25px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  color: #e5dfd9;
+}
+
+.tab-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}

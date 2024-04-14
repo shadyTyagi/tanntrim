@@ -32,6 +32,11 @@
   color: #e5dfd9;
 }
 
+.list-footer-card {
+  display: flex;
+  justify-content: space-between;
+}
+
 .discount-price {
   font-family: "Encode Sans";
   font-size: 18.79px;
