@@ -125,7 +125,7 @@ const productData = [
 ];
 
 const Product = () => {
-  const [activeTabId, setActiveTabId] = useState(tabsList[0].tabId);
+  const [activeTabId, setActiveTabId] = useState(tabsList[1].tabId);
 
   const filterProductBag = () => {
     const filteredData = productData.filter(
