@@ -31,3 +31,6 @@ npm start
 ## Data
 
 The component utilizes static data for both the tabs and product items. This data is defined directly within the component file (Product.js) for demonstration purposes. In a real-world scenario, this data might be fetched from an API or database.
+
+## PublishedLink
+https://tanntrim.vercel.app/
